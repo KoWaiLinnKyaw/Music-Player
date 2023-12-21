@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(113, 228, 222);
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Song & Track Images */
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trackImg {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+.trackName {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.trackArt {
+    font-size: 15px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+/* Time Length */
+.length {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentTime,
+.totalTime {
+    font-size: 20px;
+}
+
+.mainTimeBar {
+    width: 400px;
+    height: 5px;
+    background-color: gray;
+    margin: 0 10px;
+}
+
+.currentTimeBar {
+    width: 0px;
+    height: 5px;
+    background-color: rgb(26, 25, 25);
+}
+
+/* Controls */
+.controlBtn {
+    display: flex;
+    align-items: center;
+}
+
+.preBtn,
+.ppBtn,
+.nextBtn {
+    padding: 30px 50px;
+    cursor: pointer;
+}
+
+.preBtn:active,
+.ppBtn:active,
+.nextBtn:active {
+    opacity: 1;
+    color: red;
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Disable */
+.disabled {
+    opacity: 0.1;
+}
+
+.disabled:active {
+    color: rgb(113, 228, 222);
+}
